@@ -1,13 +1,15 @@
 import React from 'react';
 
 const TraitList = () => {
+  const traits = ['Fast', 'Dynamic', 'Responsive', 'Interactive'];
   return (
-    <div>
-      <h3>Fast</h3>
-      <h3>Dynamic</h3>
-      <h3>Responsive</h3>
-      <h3>Interactive</h3>
-    </div>
+    <>
+      <ul className='about__traits'>
+        {traits.map((trait) => {
+          return <li>{trait}</li>;
+        })}
+      </ul>
+    </>
   );
 };
 

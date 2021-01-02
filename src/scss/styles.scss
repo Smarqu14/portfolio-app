@@ -119,6 +119,16 @@ nav {
 }
 
 
+// ABOUT PAGE
+.about__traits {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
 
 
+  li {
+    padding: 100px;
+  }
+}
 
