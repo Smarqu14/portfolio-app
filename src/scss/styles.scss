@@ -120,6 +120,11 @@ nav {
 
 
 // ABOUT PAGE
+
+.about__title {
+
+}
+
 .about__traits {
   display: flex;
   justify-content: space-between;
@@ -129,14 +134,23 @@ nav {
 
   li {
     padding: 30px;
-    border: 1px solid black;
     height: 300px;
     width: 70%;
   }
 
   .about__icon {
     font-size: 90px;
-    color: red;
+    color:$lightestBlueColor;
+  }
+
+  .about__info {
+    h1 {
+      font-size: $largeRem; 
+      padding-bottom: 10px;
+    }
+    p {
+      font-size: 1.3rem;
+    }
   }
 }
 

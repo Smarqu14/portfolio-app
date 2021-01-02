@@ -4,7 +4,9 @@ import TraitList from './TraitList';
 const About = () => {
   return (
     <section>
-      <h1>About</h1>
+      <div className='about__title'>
+        <h1>About</h1>
+      </div>
       <TraitList />
     </section>
   );

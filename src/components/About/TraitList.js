@@ -1,7 +1,7 @@
 import React from 'react';
 import { BsCodeSlash } from 'react-icons/bs';
 import { BsCloudUpload } from 'react-icons/bs';
-import { GrPersonalComputer } from 'react-icons/gr';
+import { IoIosLaptop } from 'react-icons/io';
 import { AiOutlineInteraction } from 'react-icons/ai';
 
 const TraitList = () => {
@@ -15,7 +15,7 @@ const TraitList = () => {
       trait: 'Dynamic',
       description:
         "Websites don't have to be static, I love making pages come to life.",
-      icon: <GrPersonalComputer />,
+      icon: <IoIosLaptop />,
     },
     {
       trait: 'Responsive',
@@ -35,7 +35,7 @@ const TraitList = () => {
           return (
             <li>
               <div className='about__icon'>{item.icon}</div>
-              <div>
+              <div className='about__info'>
                 <h1>{item.trait}</h1>
                 <p>{item.description}</p>
               </div>
