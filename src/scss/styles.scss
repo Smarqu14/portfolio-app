@@ -128,7 +128,15 @@ nav {
 
 
   li {
-    padding: 100px;
+    padding: 30px;
+    border: 1px solid black;
+    height: 300px;
+    width: 70%;
+  }
+
+  .about__icon {
+    font-size: 90px;
+    color: red;
   }
 }
 
