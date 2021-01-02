@@ -1,0 +1,85 @@
+@import './variables.scss';
+
+.banner__container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  .banner__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    padding: 3rem calc((100vw - 1300px) / 2);
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .banner__left {
+    display: flex;
+    color: $darkBlueColor;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5rem 2rem;
+
+    .name {
+      color: $lightBlueColor;
+    }
+    
+    button {
+      padding: $smallRem $extraRem;
+      font-size: $mediumRem;
+      margin-top: $smallRem;
+      border: 1px solid $darkBlueColor;
+      border-radius: 4px;
+      outline: none;
+      cursor: pointer;
+      background: transparent;
+      color: $darkBlueColor;
+      transition: $transition;
+
+      &:hover {
+        background: $darkBlueColor;
+        color: $whiteColor;
+        border: $whiteBorder;
+        transition: $transition;
+    }
+    }
+    
+  }
+
+  .banner__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: $largeRem;
+    position: relative;
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      max-width: 250px;
+      max-height: 250px;
+      cursor: grab;
+    }
+
+    @mixin imagesLocation($top, $left) {
+      top: $top;
+      left: $left;
+    }
+
+    img:nth-child(1) {
+      @include imagesLocation(40px, 100px);
+    }
+    img:nth-child(2) {
+      @include imagesLocation(300px, 300px);
+    }
+    img:nth-child(3) {
+      @include imagesLocation(550px, 100px);
+    }
+  }
+}
