@@ -1,5 +1,5 @@
 @import './variables.scss';
-
+// BANNER COMPONENT
 .banner__container {
   height: 100vh;
   display: flex;
@@ -83,3 +83,42 @@
     }
   }
 }
+
+
+
+
+
+// NAVBAR COMPONENT
+
+nav {
+  height: 80px;
+  background: $lightBlueColor;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem calc((100vw - 1300px) / 2);
+  
+  .logo {
+    color: $darkBlueColor;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0 $largeRem;
+  }
+
+  a {
+    text-decoration: none;
+    color: $darkBlueColor;
+    padding: 0 $mediumRem; 
+    &:hover {
+        color: $whiteColor;
+        text-shadow: 2px 2px #203647;
+    }
+  }
+
+}
+
+
+
+
+
