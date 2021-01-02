@@ -48,7 +48,7 @@ const Banner = () => {
           <motion.img
             src={feelingProud}
             alt='Feeling Proud of coding session'
-            whileTap={{ scale: 0.6 }}
+            whileTap={{ scale: 0.9 }}
             drag={true}
             dragConstraints={{ left: 0, right: 250, top: 0, bottom: 50 }}
             initial={{ opacity: 0, y: -100 }}
@@ -57,7 +57,7 @@ const Banner = () => {
           <motion.img
             src={webDeveloper}
             alt='Web developer image'
-            whileTap={{ scale: 0.6 }}
+            whileTap={{ scale: 0.9 }}
             drag={true}
             dragConstraints={{ left: 50, right: 0, top: 0, bottom: 50 }}
             initial={{ opacity: 0, x: 100 }}
@@ -66,7 +66,7 @@ const Banner = () => {
           <motion.img
             src={appDevelopment}
             alt='Mobile and web development'
-            whileTap={{ scale: 0.6 }}
+            whileTap={{ scale: 0.9 }}
             drag={true}
             dragConstraints={{ left: 0, right: 250, top: 0, bottom: 50 }}
             initial={{ opacity: 0, x: -100 }}

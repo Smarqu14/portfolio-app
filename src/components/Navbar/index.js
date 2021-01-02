@@ -5,10 +5,11 @@ const Navbar = () => {
     <nav>
       <div className='nav-logo'>SteveCodes</div>
       <div className='nav-items'>
-        <a href='/'>Home</a>
-        <a href='/'>Projects</a>
-        <a href='/'>About</a>
-        <a href='/'>Contact</a>
+        <a href='#'>Home</a>
+        <a href='#'>About</a>
+        <a href='#'>Portfolio</a>
+        <a href='#'>Resume</a>
+        <a href='#'>Contact</a>
       </div>
     </nav>
   );
