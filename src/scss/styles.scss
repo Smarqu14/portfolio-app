@@ -111,7 +111,7 @@
   position: sticky;
   top: 0;
   left: 0;
-  background-color:$whiteColor;
+  background-color:#66D3FA;
 }
 
 .nav-items{
@@ -131,7 +131,7 @@
 .about__section {
   background-color: #203647;
   text-align: center;
-  margin: 100px 0px;
+  margin: 100px auto;
   color: $whiteColor
 }
 .about__traits {
@@ -164,7 +164,7 @@
   }
 }
 
-.test {
+.about__personal-info {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -182,7 +182,7 @@
     width: 500px;
     height: 500px;
     p {
-      
+      font-size: $largeRem;
     }
   }
 }
