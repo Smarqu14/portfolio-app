@@ -1,4 +1,5 @@
 @import './variables.scss';
+
 // BANNER COMPONENT
 .banner__container {
   height: 100vh;
@@ -6,7 +7,7 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-
+  background-color: $whiteColor;
   .banner__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -84,20 +85,19 @@
   }
 }
 
-
-
-
-
 // NAVBAR COMPONENT
-
-nav {
-  height: 80px;
-  background: $lightBlueColor;
+.navbar{
+  transition: all .5s ease;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0rem calc((100vw - 1300px) / 2);
-  
+  width: 100%;
+  max-width: 100%;
+  max-height: 80px;
+  height: 80px;
+  background: $lightBlueColor;
+  // padding: 0rem calc((100vw - 1300px) / 2);
+
   .logo {
     color: $darkBlueColor;
     font-size: 1.5rem;
@@ -105,8 +105,17 @@ nav {
     font-style: italic;
     padding: 0 $largeRem;
   }
+}
 
-  a {
+.scrolled{
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color:$whiteColor;
+}
+
+.nav-items{
+    a {
     text-decoration: none;
     color: $darkBlueColor;
     padding: 0 $mediumRem; 
@@ -115,21 +124,22 @@ nav {
         text-shadow: 2px 2px #203647;
     }
   }
-
 }
 
 
 // ABOUT PAGE
-
-.about__title {
-
+.about__section {
+  background-color: #203647;
+  text-align: center;
+  margin: 100px 0px;
+  color: $whiteColor
 }
-
 .about__traits {
   display: flex;
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
+  margin-bottom: 100px;
 
 
   li {
@@ -150,6 +160,29 @@ nav {
     }
     p {
       font-size: 1.3rem;
+    }
+  }
+}
+
+.test {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+  .about__picture {
+    width:350px;
+    background-image: url("../images/myphoto.JPG");
+    background-size: cover;
+    border: 3px solid $whiteColor;
+    height: 350px;
+    border-radius: 50%;
+  }
+  
+  .about__right {
+    width: 500px;
+    height: 500px;
+    p {
+      
     }
   }
 }
