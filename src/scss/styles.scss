@@ -47,7 +47,7 @@
         color: $whiteColor;
         border: $whiteBorder;
         transition: $transition;
-    }
+      }
     }
     
   }
@@ -186,6 +186,44 @@
 }
 
 // Projects Section
+  
+.category__container {
+  
+  margin: 10px 30%;
+
+  .category__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  li {
+    list-style: none;
+
+  
+    button {
+      padding: $smallRem $extraRem;
+      font-size: $mediumRem;
+      margin-top: $smallRem;
+      border: 1px solid $darkBlueColor;
+      border-radius: 4px;
+      outline: none;
+      cursor: pointer;
+      background: transparent;
+      color: $darkBlueColor;
+      transition: $transition;
+
+      &:hover {
+        background: $darkBlueColor;
+        color: $whiteColor;
+        border: $whiteBorder;
+        transition: $transition;
+      }
+    }
+  }
+
+}
+
+
 .projects__section {
   background-color: $whiteColor;
   text-align: center;
@@ -218,5 +256,6 @@
     background-color: $darkBlueColor;
     transform: scale(1.05);
   }
-
 }
+
+

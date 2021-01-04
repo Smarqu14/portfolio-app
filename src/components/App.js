@@ -3,6 +3,7 @@ import Banner from './Banner';
 import Navbar from './Navbar';
 import About from './About';
 import Projects from './Projects';
+import { projectsInformation, test } from '../data';
 
 const App = () => {
   return (
@@ -10,7 +11,7 @@ const App = () => {
       <Banner />
       <Navbar />
       <About />
-      <Projects />
+      <Projects projectsInformation={projectsInformation} test={test} />
     </>
   );
 };

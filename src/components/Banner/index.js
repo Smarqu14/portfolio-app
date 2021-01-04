@@ -42,7 +42,14 @@ const Banner = () => {
               loop
             />{' '}
           </motion.p>
-          <motion.button>View my work</motion.button>
+          <motion.button
+            variants={fadeLeft}
+            initial='hidden'
+            animate='visible'
+            transition={{ duration: 0.5 }}
+          >
+            View my work
+          </motion.button>
         </div>
         <div className='banner__right'>
           <motion.img
