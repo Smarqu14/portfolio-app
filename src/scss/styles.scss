@@ -131,16 +131,15 @@
 .about__section {
   background-color: #203647;
   text-align: center;
-  margin: 100px auto;
-  color: $whiteColor
+  margin-bottom: 100px;
+  color: $whiteColor;
 }
 .about__traits {
   display: flex;
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
-  margin-bottom: 100px;
-
+  margin: 50px;
 
   li {
     padding: 30px;
@@ -177,7 +176,6 @@
     height: 350px;
     border-radius: 50%;
   }
-  
   .about__right {
     width: 500px;
     height: 500px;
@@ -187,3 +185,30 @@
   }
 }
 
+// Projects Section
+.projects__section {
+  background-color: $whiteColor;
+  text-align: center;
+  color: $darkBlueColor;
+
+  .projects__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+
+    .projects__item {
+      border: 1px solid black;
+      height: 300px;
+      width: 300px;
+      margin: 20px;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+  }
+}
