@@ -32,7 +32,7 @@ const Projects = ({ projectsInformation, test }) => {
       </div>
       <motion.div
         className='projects__container'
-        initial={{ x: -10, opacity: 0 }}
+        initial={{ x: -50, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ ease: 'easeOut', duration: 1.2 }}
       >
