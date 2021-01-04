@@ -7,11 +7,15 @@ const CategoryList = ({ projectsInformation, test, isSelected }) => {
       {test.map((item) => {
         return (
           <li>
-            <div>
+            <motion.div
+              initial={{ opacity: 0, x: -100 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ ease: 'easeOut', duration: 1 }}
+            >
               <button onClick={(e) => isSelected(e)} category={item}>
                 {item}
               </button>
-            </div>
+            </motion.div>
           </li>
         );
       })}

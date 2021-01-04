@@ -12,6 +12,7 @@ const App = () => {
       <Navbar />
       <About />
       <Projects projectsInformation={projectsInformation} test={test} />
+      <About />
     </>
   );
 };

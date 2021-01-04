@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import Codereview from '../../images/undraw_Code_review_re_woeb.svg';
 import Programming from '../../images/undraw_programming_2svr.svg';
 
@@ -29,7 +30,12 @@ const Projects = ({ projectsInformation, test }) => {
           isSelected={isSelected}
         />
       </div>
-      <div className='projects__container'>
+      <motion.div
+        className='projects__container'
+        initial={{ x: -10, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ ease: 'easeOut', duration: 1.2 }}
+      >
         {results.length
           ? results.map((project) => {
               return (
@@ -53,7 +59,7 @@ const Projects = ({ projectsInformation, test }) => {
                 </div>
               );
             })}
-      </div>
+      </motion.div>
     </section>
   );
 };
