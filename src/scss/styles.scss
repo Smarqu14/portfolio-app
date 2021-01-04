@@ -197,18 +197,26 @@
     align-items: center;
     flex-wrap: wrap;
     padding: 50px;
-
-    .projects__item {
-      border: 1px solid black;
-      height: 300px;
-      width: 300px;
-      margin: 20px;
-
-      img {
-        width: 100%;
-        object-fit: cover;
-      }
-    }
-
   }
+}
+.projects__item {
+  border: 2px solid $darkBlueColor;
+  height: 300px;
+  background-color: $lightBlueColor;
+  color: $whiteColor;
+  width: 370px;
+  margin: 10px;
+  transition: $transition;
+
+  img {
+    max-width: 100%;
+    max-height: 100%; 
+  }
+
+  &:hover {
+    transition: $transition;
+    background-color: $darkBlueColor;
+    transform: scale(1.05);
+  }
+
 }
