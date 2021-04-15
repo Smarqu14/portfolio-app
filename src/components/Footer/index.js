@@ -1,12 +1,25 @@
 import React from 'react';
+import { FaLinkedin } from 'react-icons/fa';
+import { FaYoutube } from 'react-icons/fa';
+import { SiGmail } from 'react-icons/si';
+import { GoMarkGithub } from 'react-icons/go';
 
 const Footer = () => {
   return (
     <footer>
       <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
+        <li>
+          <FaLinkedin />
+        </li>
+        <li>
+          <FaYoutube />
+        </li>
+        <li>
+          <SiGmail />
+        </li>
+        <li>
+          <GoMarkGithub />
+        </li>
       </ul>
     </footer>
   );

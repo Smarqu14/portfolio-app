@@ -12,10 +12,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 100vh;
+    grid-gap: 2rem;
     padding: 3rem calc((100vw - 1300px) / 2);
-    
-    @media screen and (max-width: 768px) {
-      grid-template-columns: 1fr;
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+      grid-template-columns: 1fr 1fr;
+      // .banner__right {
+      //   display: none;
+      // }
     }
   }
 
@@ -26,11 +29,9 @@
     justify-content: center;
     align-items: flex-start;
     padding: 5rem $extraRem;
-
     .name {
       color: $lightBlueColor;
     }
-        
   }
 
   .banner__right {
@@ -62,6 +63,22 @@
     }
     img:nth-child(3) {
       @include imagesLocation(450px, 100px);
+    }
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        img {
+          max-width:150px;
+          max-height: 150px;
+        }
+        img:nth-child(1) {
+          @include imagesLocation(50px, 50px);
+        }
+        img:nth-child(2) {
+          @include imagesLocation(200px, 50px);
+        }
+        img:nth-child(3) {
+          @include imagesLocation(350px, 50px);
+        }
     }
   }
 }
@@ -236,7 +253,7 @@
   .form__contact {
     background: $whiteColor;
     padding: 25px;
-    margin: 150px 0;
+    margin: 75px 0;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
     
     h3 { 
@@ -306,5 +323,13 @@ footer {
     justify-content: center;
     align-items: center;
     list-style: none;
+    li {
+      font-size: $extraRem;
+      align-self: flex-start;
+      padding-top: 10px;
+      padding-right: 50px;
+      padding-left: 50px;
+    }
   }
+  
 }

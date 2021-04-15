@@ -1,5 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
+import logo from '../../images/Steve codes (1).png';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -24,7 +25,9 @@ const Navbar = () => {
 
   return (
     <nav className={head.join(' ')}>
-      <div className='logo'>Logo</div>
+      <div className='logo'>
+        <img src={logo} alt='logo' />
+      </div>
       <div className='nav-items'>
         <a href='#'>Home</a>
         <a href='#'>About</a>
