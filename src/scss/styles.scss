@@ -138,12 +138,12 @@
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
+  flex-wrap: wrap;
   margin: 50px;
-
+  
   li {
-    padding: 30px;
     height: 300px;
-    width: 70%;
+    width: 50%;
   }
 
   .about__icon {
@@ -166,13 +166,15 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
   margin: 0 auto;
+  align-content: center;
 
   .about__picture {
     height: 450px;
     width:450px;
     background: {
-      image: url("../images/myphoto.JPG");
+      image: url('../images/me.png');
       size: cover;
     }
     border: 3px solid $whiteColor;
@@ -332,4 +334,11 @@ footer {
     }
   }
   
+}
+
+.luke {
+  background-color: white;
+  margin-top: 100px;
+  height: 500px;
+  width: 100%;
 }

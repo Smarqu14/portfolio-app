@@ -6,6 +6,7 @@ import About from './About';
 import Projects from './Projects';
 import Contact from './Contact';
 import Footer from './Footer';
+import Luke from './Luke';
 
 import { projectsInformation, test } from '../data';
 
@@ -18,6 +19,7 @@ const App = () => {
       <Projects projectsInformation={projectsInformation} test={test} />
       <Contact />
       <Footer />
+      <Luke />
     </>
   );
 };

@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <nav className={head.join(' ')}>
       <div className='logo'>
-        <img src={logo} alt='logo' />
+        <img src={logo} alt='logo' height='300px' width='400px' />
       </div>
       <div className='nav-items'>
         <a href='#'>Home</a>

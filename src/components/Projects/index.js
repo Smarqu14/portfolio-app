@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Codereview from '../../images/undraw_Code_review_re_woeb.svg';
 import Programming from '../../images/undraw_programming_2svr.svg';
-import me from '../../images/me.JPG';
+// import me from '../../images/me.png';
 
 import CategoryList from './CategoryList.js';
 
