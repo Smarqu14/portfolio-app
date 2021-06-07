@@ -114,14 +114,18 @@
 }
 
 .nav-items{
+  display:flex;
+  li {
+    list-style: none;
     a {
-    text-decoration: none;
-    color: $darkBlueColor;
-    padding: 0 $mediumRem; 
-
-    &:hover {
+      text-decoration: none;
+      color: $darkBlueColor;
+      padding: 0 $mediumRem; 
+      
+      &:hover {
         color: $whiteColor;
         text-shadow: 2px 2px #203647;
+      }
     }
   }
 }

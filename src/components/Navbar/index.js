@@ -1,9 +1,11 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import logo from '../../images/Steve codes (1).png';
+import { MenuItems } from './MenuItems';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [clicked, setClicked] = useState(false);
 
   const handleScroll = () => {
     const offset = window.scrollY;
@@ -28,12 +30,22 @@ const Navbar = () => {
       <div className='logo'>
         <img src={logo} alt='logo' height='300px' width='400px' />
       </div>
-      <div className='nav-items'>
+      {/* <div className='nav-items'>
         <a href='#'>Home</a>
         <a href='#'>About</a>
         <a href='#'>Portfolio</a>
         <a href='#'>Contact</a>
-      </div>
+      </div> */}
+
+      <ul className='nav-items'>
+        {MenuItems.map((items, index) => {
+          return (
+            <li key={index}>
+              <a href={items.url}>{items.title}</a>
+            </li>
+          );
+        })}
+      </ul>
     </nav>
   );
 };
