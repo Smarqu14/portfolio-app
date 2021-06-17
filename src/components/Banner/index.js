@@ -12,7 +12,7 @@ const Banner = () => {
           <h1>
             Hi. My name is <span className='name'>Steve Marquez</span>
           </h1>
-          <p>
+          <p className="banner-typed-text">
             I am{' '}
             <Typed
               strings={[
