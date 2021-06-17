@@ -7,7 +7,9 @@ const TraitList = ({ traits }) => {
         {traits.map((item) => {
           return (
             <li>
-              <div className='about__icon'>{item.icon}</div>
+              <div style={{ color: `${item.color}` }} className='about__icon'>
+                {item.icon}
+              </div>
               <div className='about__info'>
                 <h1>{item.trait}</h1>
                 <p>{item.description}</p>
