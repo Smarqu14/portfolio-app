@@ -4,22 +4,15 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
     border: 0;  
     font-family: 'Josefin Sans', 'Lucida Sans Unicode', 'Lucida Grande','Lucida Sans', Arial, sans-serif;
 }
 
 body { 
     font-size: $largeRem;
-    background: $shadowDarkBlueColor;
+    background: #0F1624;
     color: $darkBlueColor;  
 } 
-
-section {
-    .title {
-        padding: 100px 0px 0px;
-    }
-}
 
 button {
     padding: $smallRem $extraRem;
@@ -29,12 +22,11 @@ button {
     border-radius: 4px;
     outline: none;
     cursor: pointer;
-    background: transparent;
+    background: $whiteColor;
     color: $darkBlueColor;
     transition: $transition;
-
     &:hover {
-      background: $darkBlueColor;
+      background: transparent;
       color: $whiteColor;
       border: $whiteBorder;
       transition: $transition;

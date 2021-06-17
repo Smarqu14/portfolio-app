@@ -2,18 +2,19 @@
 
 // BANNER COMPONENT
 .banner__container {
-  height: 100vh;
   display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  background-color: $whiteColor;
   .banner__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 100vh;
     grid-gap: 2rem;
     padding: 3rem calc((100vw - 1300px) / 2);
+
+
     @media only screen and (min-width: 480px) and (max-width: 767px) {
       grid-template-columns: 1fr 1fr;
       // .banner__right {
@@ -24,10 +25,10 @@
 
   .banner__left {
     display: flex;
-    color: $darkBlueColor;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    color: $whiteColor;
     padding: 5rem $extraRem;
     .name {
       color: $lightBlueColor;
@@ -35,50 +36,13 @@
   }
 
   .banner__right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: $largeRem;
-    position: relative;
-
     img {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      max-width: 250px;
-      max-height: 250px;
-      cursor: grab;
+      height: 600px;
+      max-width: 100%;
+      object-fit: cover;
     }
-
-    @mixin imagesLocation($top, $left) {
-      top: $top;
-      left: $left;
-    }
-
-    img:nth-child(1) {
-      @include imagesLocation(40px, 100px);
-    }
-    img:nth-child(2) {
-      @include imagesLocation(250px, 300px);
-    }
-    img:nth-child(3) {
-      @include imagesLocation(450px, 100px);
-    }
-
     @media only screen and (min-width: 480px) and (max-width: 767px) {
-        img {
-          max-width:150px;
-          max-height: 150px;
-        }
-        img:nth-child(1) {
-          @include imagesLocation(50px, 50px);
-        }
-        img:nth-child(2) {
-          @include imagesLocation(200px, 50px);
-        }
-        img:nth-child(3) {
-          @include imagesLocation(350px, 50px);
-        }
+        
     }
   }
 }
@@ -92,16 +56,13 @@
   width: 100%;
   max-width: 100%;
   max-height: 80px;
-  height: 80px;
-  background: $lightBlueColor;
-
-  .logo {
-    color: $darkBlueColor;
-      font: {
-      size: $mediumRem;
-      weight: bold;
-      style: italic
-    }
+}
+.logo {  
+  margin-top:5px;
+  img {
+    height: 300px;
+    max-width: 100%;
+    object-fit: cover;
   }
 }
 
@@ -110,7 +71,7 @@
   z-index: 100;
   top: 0;
   left: 0;
-  background-color:#66D3FA;
+  background:$lightBlueColor;
 }
 
 .nav-items{
@@ -119,12 +80,78 @@
     list-style: none;
     a {
       text-decoration: none;
-      color: $darkBlueColor;
-      padding: 0 $mediumRem; 
-      
+      color: $whiteColor;
+      padding: 7px 10px;
+      margin-right: 10px; 
+      font-size: 35px;
+      border: 1px solid transparent;
       &:hover {
+        // color:$shadowDarkBlueColor;
+        // background:$whiteColor;
+        // border-radius: 3px;
+        background: transparent;
         color: $whiteColor;
-        text-shadow: 2px 2px #203647;
+        border: $whiteBorder;
+        transition: $transition;
+        
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  //Navbar
+  .nav-items{
+    li {
+      a {
+        font-size: 30px;
+      }
+    }
+  }
+  .logo {  
+    img {
+      height: 250px;
+      max-width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  //Navbar
+  .navbar {
+      justify-content: space-evenly;
+      padding: 10px;
+  }
+  .nav-items{
+    li {
+      a {  
+        font-size: 25px;
+      }
+    }
+  }
+  .logo {  
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  // Navbar
+  .nav-items{
+    li {
+      a {  
+        font-size: 20px;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  //Navbar
+  .nav-items{
+    li {
+      a {  
+        font-size: 15px;
       }
     }
   }
@@ -134,8 +161,9 @@
 // ABOUT PAGE
 .about__section {
   text-align: center;
-  margin-bottom: 100px;
   color: $whiteColor;
+  // background:$shadowDarkBlueColor;
+  padding: 90px;
 }
 .about__traits {
   display: flex;
@@ -145,13 +173,14 @@
   flex-wrap: wrap;
   margin: 50px;
   
+  
   li {
     height: 300px;
     width: 50%;
   }
 
   .about__icon {
-    font-size: 90px;
+    font-size: 100px;
     color:$lightestBlueColor;
   }
 
@@ -181,7 +210,7 @@
       image: url('../images/me.png');
       size: cover;
     }
-    border: 3px solid $whiteColor;
+    border: 3px solid $darkBlueColor;;
     border-radius: 50%;
   }
   .about__right {
@@ -195,10 +224,10 @@
 
 // Projects Section
 .projects__section {
-  background-color: $whiteColor;
+  // background-color: $whiteColor;
   text-align: center;
   color: $darkBlueColor;
-  padding-bottom: 100px;
+  padding: 90px;
   
 
   .projects__container {
@@ -225,34 +254,42 @@
 
   &:hover {
     transition: $transition;
-    background-color: $darkBlueColor;
+    // background-color: $darkBlueColor;
     transform: scale(1.05);
   }
 }
 
 .category__container {
-  margin: 10px 50%;
-
   .category__list {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content:center; 
+    align-content: center;
+    padding: 20px;
   }
   li {
+    width: 100px;
+    height: 50px;
+    // background-color: #203647;
+    color: white;
+    border: 1px solid white;;
+    font-size: 20px;
+    padding-top: 15px;
     list-style: none;
+    border-radius: 5px;
   }
-
 }
 
 // Contact
 .section__contact {
-  font-size: $smallRem;  
+  font-size: $smallRem;
+  // background-color: #203647;  
+  padding: 90px;
   .form__container {
     max-width: 400px;
     width: 100%;
     margin: 0 auto;
     position: relative;
-
   }
 
 
@@ -302,9 +339,7 @@
       cursor: pointer;
       border: none;
       background: $darkBlueColor;
-      border: 1px solid transparent;
-
-      
+      border: 1px solid transparent;      
       color: $whiteColor;
       font-size: 15px;
       &:hover {
@@ -315,7 +350,6 @@
       }
      }
   }
-
   }
 }
 
@@ -323,7 +357,7 @@
 // Footer
 
 footer {
-  background-color: $whiteColor;
+  // background-color: $whiteColor;
   ul {
     display: flex;
     justify-content: center;
@@ -340,9 +374,3 @@ footer {
   
 }
 
-.luke {
-  background-color: white;
-  margin-top: 100px;
-  height: 500px;
-  width: 100%;
-}

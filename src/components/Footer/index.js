@@ -14,12 +14,12 @@ const Footer = () => {
         <li>
           <FaYoutube />
         </li>
-        <li>
+        {/* <li>
           <SiGmail />
-        </li>
-        <li>
+        </li> */}
+        {/* <li>
           <GoMarkGithub />
-        </li>
+        </li> */}
       </ul>
     </footer>
   );

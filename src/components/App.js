@@ -6,20 +6,20 @@ import About from './About';
 import Projects from './Projects';
 import Contact from './Contact';
 import Footer from './Footer';
-import Luke from './Luke';
+import Technologies from './Technologies';
 
 import { projectsInformation, test } from '../data';
 
 const App = () => {
   return (
     <>
-      <Banner />
       <Navbar />
+      <Banner />
       <About />
+      {/* <Technologies /> */}
       <Projects projectsInformation={projectsInformation} test={test} />
       <Contact />
       <Footer />
-      <Luke />
     </>
   );
 };

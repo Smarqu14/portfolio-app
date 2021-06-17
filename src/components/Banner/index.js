@@ -1,35 +1,18 @@
 import React from 'react';
 import Typed from 'react-typed';
 
-import { motion } from 'framer-motion';
-
-import feelingProud from '../../images/undraw_feeling_proud_qne1.svg';
-import webDeveloper from '../../images/undraw_Freelancer_re_irh4.svg';
-import appDevelopment from '../../images/undraw_progressive_app_m9ms.svg';
+import futuristic5 from '../../images/futuristic5.gif';
+import futuristic from '../../images/futuristic.gif';
 
 const Banner = () => {
-  const fadeLeft = {
-    hidden: { opacity: 0, x: -100 },
-    visible: { opacity: 1, x: 0 },
-  };
-
   return (
     <div className='banner__container'>
       <div className='banner__content'>
         <div className='banner__left'>
-          <motion.h1
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-          >
+          <h1>
             Hi. My name is <span className='name'>Steve Marquez</span>
-          </motion.h1>
-          <motion.p
-            variants={fadeLeft}
-            initial='hidden'
-            animate='visible'
-            transition={{ duration: 1 }}
-          >
+          </h1>
+          <p>
             I am{' '}
             <Typed
               strings={[
@@ -41,44 +24,11 @@ const Banner = () => {
               backSpeed={80}
               loop
             />{' '}
-          </motion.p>
-          <motion.button
-            variants={fadeLeft}
-            initial='hidden'
-            animate='visible'
-            transition={{ duration: 0.5 }}
-          >
-            View my work
-          </motion.button>
+          </p>
+          <button>View my work</button>
         </div>
         <div className='banner__right'>
-          <motion.img
-            src={feelingProud}
-            alt='Feeling Proud of coding session'
-            whileTap={{ scale: 0.9 }}
-            drag={true}
-            dragConstraints={{ left: 0, right: 250, top: 0, bottom: 50 }}
-            initial={{ opacity: 0, y: -100 }}
-            animate={{ opacity: 1, y: 0, transition: { duration: 1 } }}
-          />
-          <motion.img
-            src={webDeveloper}
-            alt='Web developer image'
-            whileTap={{ scale: 0.9 }}
-            drag={true}
-            dragConstraints={{ left: 50, right: 0, top: 0, bottom: 50 }}
-            initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 1, x: 0, transition: { duration: 1 } }}
-          />
-          <motion.img
-            src={appDevelopment}
-            alt='Mobile and web development'
-            whileTap={{ scale: 0.9 }}
-            drag={true}
-            dragConstraints={{ left: 0, right: 250, top: 0, bottom: 50 }}
-            initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0, transition: { duration: 1 } }}
-          />
+          <img src={futuristic5} />
         </div>
       </div>
     </div>

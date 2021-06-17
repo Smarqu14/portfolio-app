@@ -9,7 +9,7 @@ const Navbar = () => {
 
   const handleScroll = () => {
     const offset = window.scrollY;
-    if (offset >= 790) {
+    if (offset >= 1) {
       setScrolled(true);
     } else {
       setScrolled(false);
@@ -20,7 +20,7 @@ const Navbar = () => {
     window.addEventListener('scroll', handleScroll);
   });
 
-  let head = ['navbar'];
+  const head = ['navbar'];
   if (scrolled) {
     head.push('scrolled');
   }
@@ -28,16 +28,9 @@ const Navbar = () => {
   return (
     <nav className={head.join(' ')}>
       <div className='logo'>
-        <img src={logo} alt='logo' height='300px' width='400px' />
+        <img src={logo} alt='Steve Marquez logo' />
       </div>
-      {/* <div className='nav-items'>
-        <a href='#'>Home</a>
-        <a href='#'>About</a>
-        <a href='#'>Portfolio</a>
-        <a href='#'>Contact</a>
-      </div> */}
-
-      <ul className='nav-items'>
+      <ul className={clicked ? 'nav-links' : 'nav-items'}>
         {MenuItems.map((items, index) => {
           return (
             <li key={index}>

@@ -1,6 +1,7 @@
 import React from 'react';
 import TraitList from './TraitList';
 import PersonalInfo from './PersonalInfo';
+import { traits } from '../../data/index';
 
 const About = () => {
   return (
@@ -8,7 +9,7 @@ const About = () => {
       <div className='title'>
         <h1>About</h1>
       </div>
-      <TraitList />
+      <TraitList traits={traits} />
       <PersonalInfo />
     </section>
   );
