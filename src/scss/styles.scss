@@ -118,6 +118,7 @@
     }
     p {
       font-size: 1.3rem;
+      margin: 25px;
       
     }
   }
@@ -125,10 +126,9 @@
 
 .about__personal-info {
   display: flex;
-  justify-content: space-around;
+  justify-content:space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  margin: 0 auto;
   align-content: center;
 
   .about__picture {
@@ -136,10 +136,10 @@
     width:450px;
     background: {
       image: url('../images/me.png');
-      size: cover;
+      size:cover;
     }
-    border: 3px solid $darkBlueColor;;
-    border-radius: 50%;
+    border: $whiteBorder;;
+    border-radius: 5px;
   }
   .about__right {
     width:450px;
@@ -182,7 +182,6 @@
 
   &:hover {
     transition: $transition;
-    // background-color: $darkBlueColor;
     transform: scale(1.05);
   }
 }
@@ -321,6 +320,20 @@ footer {
       object-fit: cover;
     }
   }
+
+  // ABOUT ME 
+.about__personal-info {
+  .about__picture {
+    height: 400px;
+    width:400px;
+  }
+  .about__right {
+    padding: 25px;
+    p {
+      font-size: 1.4rem;
+    }
+  }
+}
   
 }
 @media screen and (max-width: 700px) {
@@ -361,6 +374,36 @@ footer {
     }
   }
   
+//Banner
+.about__traits {
+  padding: 10px;
+
+  .about__icon {
+    font-size: 80px;
+  }
+  .about__info {
+    h1 {
+      font-size: $mediumRem; 
+      padding-bottom: 15px;
+    }
+    p {
+      font-size: 1.2rem;      
+    }
+  }
+}
+
+
+// Title
+.title {
+  padding:80px 0px;
+
+ h1:before {
+  top: 100% !important;
+ }
+ h1:after {
+  top: 100% !important;
+ }
+}
 }
 
 @media screen and (max-width: 500px) {
@@ -370,6 +413,37 @@ footer {
       a {  
         font-size: 20px;
         margin-right: 5px;
+      }
+    }
+  }
+
+  //Banner
+  .about__traits {
+    padding: 10px;
+    
+    .about__icon {
+      font-size: 70px;
+    }
+  
+    .about__info {
+      h1 {
+        font-size: $mediumRem; 
+        padding-bottom: 15px;
+      }
+      p {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  .about__personal-info {
+    .about__picture {
+      height: 350px;
+      width:350px;
+    }
+    .about__right {
+      p {
+        font-size: 1.3rem;
       }
     }
   }
@@ -384,4 +458,32 @@ footer {
       }
     }
   }
+    //Banner
+    .about__traits {
+      .about__icon {
+        font-size: 65px;
+      }
+    
+      .about__info {
+        h1 {
+          font-size: $smallRem; 
+          padding-bottom: 10px;
+        }
+        p {
+          font-size: 1.0rem;
+        }
+      }
+    }
+    // About me
+    .about__personal-info {
+      .about__picture {
+        height: 300px;
+        width:300px;
+      }
+      .about__right {
+        p {
+          font-size: 1.2rem;
+        }
+      }
+    }
 }

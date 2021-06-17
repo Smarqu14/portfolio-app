@@ -6,13 +6,15 @@ const PersonalInfo = () => {
       <div className='about__picture' />
       <div className='about__right'>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, nihil
-          distinctio, pariatur laboriosam saepe officiis, tenetur explicabo sit
-          placeat veritatis vero. Atque, nesciunt deserunt iste obcaecati
-          adipisci error consectetur earum? Lorem ipsum, dolor sit amet
-          consectetur adipisicing elit. Vero quibusdam eaque esse officia
-          inventore rerum expedita culpa fugit veritatis dolorem, fuga quasi,
-          blanditiis Lorem
+          I am a driven Software Engineer with a professional background in
+          project management with a degree in Information Systems. To me, being
+          a Software Engineer is more than just a job or career. I consider it
+          an opportunity to showcase my technical skills and contribute to
+          something much more significant, the future of technology. Inspiring
+          the youth to never give up on their dreams has always pushed me to
+          become a better programmer and human being. I believe that I am
+          working towards making a change in the world; this is why I have
+          become a Software Engineer.
         </p>
       </div>
     </div>
