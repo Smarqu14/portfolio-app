@@ -1,5 +1,5 @@
-import { BsCodeSlash } from 'react-icons/bs';
-import { BsCloudUpload } from 'react-icons/bs';
+import { IoMdSpeedometer } from 'react-icons/io';
+import { DiResponsive } from 'react-icons/di';
 import { IoIosLaptop } from 'react-icons/io';
 import { AiOutlineInteraction } from 'react-icons/ai';
 
@@ -16,7 +16,7 @@ export const traits = [
   {
     trait: 'Fast',
     description: 'Fast load times and lag free interaction.',
-    icon: <BsCodeSlash />,
+    icon: <IoMdSpeedometer />,
     color: '#b33951',
   },
   {
@@ -29,7 +29,7 @@ export const traits = [
   {
     trait: 'Responsive',
     description: 'My layouts will work on any device, big or small.',
-    icon: <BsCloudUpload />,
+    icon: <DiResponsive />,
     color: '#4f759b',
   },
   {

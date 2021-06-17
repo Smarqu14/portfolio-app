@@ -6,7 +6,7 @@ import About from './About';
 import Projects from './Projects';
 import Contact from './Contact';
 import Footer from './Footer';
-import Technologies from './Technologies';
+import Skills from './Skills';
 
 import { projectsInformation, test } from '../data';
 
@@ -16,7 +16,7 @@ const App = () => {
       <Navbar />
       <Banner />
       <About />
-      {/* <Technologies /> */}
+      <Skills />
       <Projects projectsInformation={projectsInformation} test={test} />
       <Contact />
       <Footer />
