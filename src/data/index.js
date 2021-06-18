@@ -1,7 +1,19 @@
-import { IoMdSpeedometer } from 'react-icons/io';
-import { DiResponsive } from 'react-icons/di';
-import { IoIosLaptop } from 'react-icons/io';
-import { AiOutlineInteraction } from 'react-icons/ai';
+import {
+  IoMdSpeedometer,
+  IoLogoJavascript,
+  IoLogoHtml5,
+  IoIosLaptop,
+} from 'react-icons/io';
+import { DiResponsive, DiNodejs, DiCss3 } from 'react-icons/di';
+import { AiOutlineInteraction, AiOutlineGithub } from 'react-icons/ai';
+import {
+  SiRedux,
+  SiMysql,
+  SiAmazonaws,
+  SiReact,
+  SiPython,
+} from 'react-icons/si';
+import { GrNode } from 'react-icons/gr';
 
 export const projectsInformation = [
   { id: 1, category: 'React', name: 'MobilityReact', information: 'Project1' },
@@ -37,6 +49,45 @@ export const traits = [
     description: 'Strong preference for easy to use, intuitive UX/UI.',
     icon: <AiOutlineInteraction />,
     color: '#028090',
+  },
+];
+
+export const Logos = [
+  {
+    technology: 'ReactJS',
+    icon: <SiReact />,
+  },
+  {
+    technology: 'JavaScript',
+    icon: <IoLogoJavascript />,
+  },
+  {
+    technology: 'Redux',
+    icon: <SiRedux />,
+  },
+  {
+    technology: 'NodeJS',
+    icon: <GrNode />,
+  },
+  {
+    technology: 'HTML5',
+    icon: <IoLogoHtml5 />,
+  },
+  {
+    technology: 'CSS3',
+    icon: <DiCss3 />,
+  },
+  {
+    technology: 'AWS',
+    icon: <SiAmazonaws />,
+  },
+  {
+    technology: 'Git',
+    icon: <AiOutlineGithub />,
+  },
+  {
+    technology: 'Python',
+    icon: <SiPython />,
   },
 ];
 export const test = ['All', 'React', 'Express', 'AWS'];

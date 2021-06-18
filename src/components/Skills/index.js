@@ -1,5 +1,5 @@
 import React from 'react';
-import Chart from './Chart';
+import { Logos } from '../../data/index';
 
 const index = () => {
   return (
@@ -7,26 +7,37 @@ const index = () => {
       <div className='title'>
         <h1>Skills</h1>
       </div>
-      {/* <Chart /> */}
-      <div>
-        <p>HTML</p>
-        <div className='container'>
-          <div className='skills html'>90%</div>
+      <div className='skills_inner-container'>
+        <div className='technologies__icons'>
+          {Logos.map((logo) => {
+            return (
+              <div>
+                <p>{logo.technology}</p> {logo.icon}
+              </div>
+            );
+          })}
         </div>
 
-        <p>CSS</p>
-        <div className='container'>
-          <div className='skills css'>80%</div>
-        </div>
+        <div className='skills__bar'>
+          <p>Front-end</p>
+          <div className='container'>
+            <div className='skills html'>90%</div>
+          </div>
 
-        <p>JavaScript</p>
-        <div className='container'>
-          <div className='skills js'>65%</div>
-        </div>
+          <p>FullStackJS</p>
+          <div className='container'>
+            <div className='skills css'>80%</div>
+          </div>
 
-        <p>PHP</p>
-        <div className='container'>
-          <div className='skills php'>60%</div>
+          <p>ReactJS</p>
+          <div className='container'>
+            <div className='skills js'>90%</div>
+          </div>
+
+          <p>Flask</p>
+          <div className='container'>
+            <div className='skills php'>60%</div>
+          </div>
         </div>
       </div>
     </section>
