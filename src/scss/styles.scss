@@ -233,6 +233,11 @@
 .projects__section {
   text-align: center;
   padding-top: 40px;
+
+  .title {
+    margin-top: 100px;
+    padding: 0px 0px;
+  }
   
   .projects__container {
     display: flex;
@@ -385,7 +390,7 @@ footer {
     padding-top: 0px;
     width: 100%;
   }
-  }
+  }  
 }
 
 }
@@ -464,6 +469,13 @@ footer {
     padding-top: 0px;
   }
 }
+
+}
+.projects__section {
+
+  .title {
+    margin-top: 200px;
+  }
 }
 
 }
@@ -564,5 +576,5 @@ footer {
           font-size: 1.2rem;
         }
       }
-    }
+    }    
 }
