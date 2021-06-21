@@ -24,7 +24,9 @@ const Banner = () => {
               loop
             />{' '}
           </p>
-          <button>View my work</button>
+          <a href='#contact'>
+            <button>View my work</button>
+          </a>
         </div>
         <div className='banner__right'>
           <img src={futuristic} />

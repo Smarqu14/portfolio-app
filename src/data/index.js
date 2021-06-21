@@ -12,8 +12,11 @@ import {
   SiAmazonaws,
   SiReact,
   SiPython,
+  SiGmail,
 } from 'react-icons/si';
 import { GrNode } from 'react-icons/gr';
+import { FaLinkedin, FaYoutube } from 'react-icons/fa';
+import { GoMarkGithub } from 'react-icons/go';
 
 import lego from '../images/lego.png';
 import builder from '../images/builder.png';
@@ -29,6 +32,7 @@ export const projectsInformation = [
     name: 'Gallery Component',
     information: 'Full-stack application',
     src: lego,
+    link: 'https://github.com/Smarqu14/GalleryComponent',
   },
   {
     id: 2,
@@ -36,6 +40,7 @@ export const projectsInformation = [
     name: 'Construction Website',
     information: 'React application',
     src: builder,
+    link: 'https://www.brighterbaybuilders.com/',
   },
   {
     id: 3,
@@ -43,6 +48,7 @@ export const projectsInformation = [
     name: 'Adidas Reviews Component',
     information: 'Backend application',
     src: reviews,
+    link: 'https://github.com/abibas-hrsf127/reviews-module-steve',
   },
   {
     id: 4,
@@ -50,6 +56,7 @@ export const projectsInformation = [
     name: 'Food Truck Website',
     information: 'Fullstack application',
     src: foodtruck,
+    link: 'https://github.com/Smarqu14/FoodTruckApp',
   },
   {
     id: 5,
@@ -57,6 +64,7 @@ export const projectsInformation = [
     name: 'Python Application',
     information: 'Flask Job Board Application',
     src: jobs,
+    link: 'https://github.com/Smarqu14/PythonFlask-JobBoard',
   },
   {
     id: 6,
@@ -64,6 +72,7 @@ export const projectsInformation = [
     name: 'Portfolio Website',
     information: 'React & SaSS application',
     src: portfolio,
+    link: 'https://github.com/Smarqu14/portfolio-app',
   },
 ];
 
@@ -140,6 +149,27 @@ export const Logos = [
     technology: 'Python',
     icon: <SiPython />,
     color: '#4b8bbe',
+  },
+];
+
+export const contactLogos = [
+  {
+    technology: 'LinkedIn',
+    icon: <FaLinkedin />,
+    color: '#0077b5',
+    link: 'https://www.linkedin.com/in/steveantonio00/',
+  },
+  {
+    technology: 'Youtube',
+    icon: <FaYoutube />,
+    color: '#c4302b',
+    link: 'https://www.youtube.com/channel/UCNvemqjtbl_H1dQY2ZL96Yg',
+  },
+  {
+    technology: 'Github',
+    icon: <AiOutlineGithub />,
+    color: 'white',
+    link: 'https://github.com/Smarqu14',
   },
 ];
 export const category = ['All', 'React', 'Fullstack', 'Flask'];

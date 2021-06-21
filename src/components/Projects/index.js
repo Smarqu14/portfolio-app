@@ -32,22 +32,26 @@ const Projects = ({ projectsInformation, category }) => {
           ? results.map((project) => {
               return (
                 <div className='projects__item'>
-                  <h2>{project.name}</h2>
-                  <p>{project.information}</p>
-                  <div>
-                    <img src={project.src} alt='imagecodie' />
-                  </div>
+                  <a href={project.link} target='_blank'>
+                    <h2>{project.name}</h2>
+                    <p>{project.information}</p>
+                    <div>
+                      <img src={project.src} alt='imagecodie' />
+                    </div>
+                  </a>
                 </div>
               );
             })
           : projectsInformation.map((project) => {
               return (
                 <div className='projects__item'>
-                  <h2>{project.name}</h2>
-                  <p>{project.information}</p>
-                  <div>
-                    <img src={project.src} alt='imagecodie' />
-                  </div>
+                  <a href={project.link} target='_blank'>
+                    <h2>{project.name}</h2>
+                    <p>{project.information}</p>
+                    <div>
+                      <img src={project.src} alt='imagecodie' />
+                    </div>
+                  </a>
                 </div>
               );
             })}

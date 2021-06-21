@@ -232,6 +232,7 @@
 // Projects Section
 .projects__section {
   text-align: center;
+  padding-top: 40px;
   
   .projects__container {
     display: flex;
@@ -249,6 +250,10 @@
   border-radius: 5px;
   width: 400px;
   transition: $transition;
+  a {
+    color: $whiteColor;
+    text-decoration: none;
+  }
   h2 {
     padding-top: 20px;
     font-size: 25px;
@@ -275,6 +280,7 @@
 }
 
 .category__container {
+  padding: 50px;
   .category__list {
     display: flex;
     align-items: center;
@@ -299,6 +305,13 @@
   text-align: center;
   .button-container{
     margin-top: 50px;
+  }
+
+  .icon-container {
+    margin-top: 50px;
+    a {
+      color: white;
+    }
   }
 }
 

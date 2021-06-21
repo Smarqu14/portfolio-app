@@ -1,10 +1,7 @@
 import React from 'react';
-import { useForm } from 'react-hook-form';
+import { AiOutlineArrowUp } from 'react-icons/ai';
 
 const Contact = () => {
-  const { register, handleSubmit, watch, errors } = useForm();
-  const onSubmit = (data) => console.log(data);
-
   return (
     <div className='section__contact'>
       <div>
@@ -12,7 +9,17 @@ const Contact = () => {
           <h2>Contact</h2>
         </div>
         <div className='button-container'>
-          <button>Let's work together</button>
+          <a
+            href='mailto:steveantonio00@gmail.com?Subject=I am interested in a website'
+            target='_top'
+          >
+            <button>Let's work together</button>
+          </a>
+        </div>
+        <div className='icon-container'>
+          <a href='#'>
+            <AiOutlineArrowUp />
+          </a>
         </div>
       </div>
     </div>

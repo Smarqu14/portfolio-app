@@ -1,25 +1,23 @@
 import React from 'react';
-import { FaLinkedin } from 'react-icons/fa';
-import { FaYoutube } from 'react-icons/fa';
-import { SiGmail } from 'react-icons/si';
-import { GoMarkGithub } from 'react-icons/go';
+import { contactLogos } from '../../data/index';
 
 const Footer = () => {
   return (
     <footer>
       <ul>
-        <li>
-          <FaLinkedin />
-        </li>
-        <li>
-          <FaYoutube />
-        </li>
-        <li>
-          <SiGmail />
-        </li>
-        <li>
-          <GoMarkGithub />
-        </li>
+        {contactLogos.map((icon) => {
+          return (
+            <li>
+              <a
+                href={icon.link}
+                target='_blank'
+                style={{ color: `${icon.color}` }}
+              >
+                {icon.icon}
+              </a>
+            </li>
+          );
+        })}
       </ul>
     </footer>
   );
