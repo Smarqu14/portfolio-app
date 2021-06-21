@@ -12,7 +12,8 @@ const index = () => {
           {Logos.map((logo) => {
             return (
               <div>
-                <p>{logo.technology}</p> {logo.icon}
+                <p style={{ color: logo.color }}>{logo.technology}</p>{' '}
+                {logo.icon}
               </div>
             );
           })}
@@ -21,22 +22,22 @@ const index = () => {
         <div className='skills__bar'>
           <p>Front-end</p>
           <div className='container'>
-            <div className='skills html'>90%</div>
+            <div className='skills frontend'>90%</div>
           </div>
 
           <p>FullStackJS</p>
           <div className='container'>
-            <div className='skills css'>80%</div>
+            <div className='skills fullstack'>80%</div>
           </div>
 
           <p>ReactJS</p>
           <div className='container'>
-            <div className='skills js'>90%</div>
+            <div className='skills react'>90%</div>
           </div>
 
           <p>Flask</p>
           <div className='container'>
-            <div className='skills php'>60%</div>
+            <div className='skills flask'>60%</div>
           </div>
         </div>
       </div>

@@ -15,13 +15,56 @@ import {
 } from 'react-icons/si';
 import { GrNode } from 'react-icons/gr';
 
+import lego from '../images/lego.png';
+import builder from '../images/builder.png';
+import reviews from '../images/reviews.png';
+import foodtruck from '../images/foodtruck.png';
+import jobs from '../images/jobs.png';
+import portfolio from '../images/portfolio.png';
+
 export const projectsInformation = [
-  { id: 1, category: 'React', name: 'MobilityReact', information: 'Project1' },
-  { id: 2, category: 'Express', name: 'Expresatio', information: 'Project2' },
-  { id: 3, category: 'React', name: 'Reactito', information: 'Project3' },
-  { id: 4, category: 'AWS', name: 'Awsito', information: 'Project4' },
-  { id: 5, category: 'Express', name: 'Exp', information: 'Project5' },
-  { id: 6, category: 'React', name: 'React-native', information: 'Project6' },
+  {
+    id: 1,
+    category: 'React',
+    name: 'Gallery Component',
+    information: 'Full-stack application',
+    src: lego,
+  },
+  {
+    id: 2,
+    category: 'React',
+    name: 'Construction Website',
+    information: 'React application',
+    src: builder,
+  },
+  {
+    id: 3,
+    category: 'Fullstack',
+    name: 'Adidas Reviews Component',
+    information: 'Backend application',
+    src: reviews,
+  },
+  {
+    id: 4,
+    category: 'Fullstack',
+    name: 'Food Truck Website',
+    information: 'Fullstack application',
+    src: foodtruck,
+  },
+  {
+    id: 5,
+    category: 'Flask',
+    name: 'Python Application',
+    information: 'Flask Job Board Application',
+    src: jobs,
+  },
+  {
+    id: 6,
+    category: 'React',
+    name: 'Portfolio Website',
+    information: 'React & SaSS application',
+    src: portfolio,
+  },
 ];
 
 export const traits = [
@@ -56,38 +99,47 @@ export const Logos = [
   {
     technology: 'ReactJS',
     icon: <SiReact />,
+    color: '#61DBFB',
   },
   {
     technology: 'JavaScript',
     icon: <IoLogoJavascript />,
+    color: '#F0DB4F',
   },
   {
     technology: 'Redux',
     icon: <SiRedux />,
+    color: '#764abc',
   },
   {
     technology: 'NodeJS',
     icon: <GrNode />,
+    color: '#68A063',
   },
   {
     technology: 'HTML5',
     icon: <IoLogoHtml5 />,
+    color: '#000',
   },
   {
     technology: 'CSS3',
     icon: <DiCss3 />,
+    color: '#264de4',
   },
   {
     technology: 'AWS',
     icon: <SiAmazonaws />,
+    color: '#FF9900',
   },
   {
     technology: 'Git',
     icon: <AiOutlineGithub />,
+    color: '#333',
   },
   {
     technology: 'Python',
     icon: <SiPython />,
+    color: '#4b8bbe',
   },
 ];
-export const test = ['All', 'React', 'Express', 'AWS'];
+export const test = ['All', 'React', 'Fullstack', 'Flask'];

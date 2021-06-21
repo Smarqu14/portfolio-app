@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import Programming from '../../images/undraw_programming_2svr.svg';
-// import me from '../../images/me.png';
+import lego from '../../images/lego.png';
 
 import CategoryList from './CategoryList.js';
 
@@ -17,7 +15,6 @@ const Projects = ({ projectsInformation, test }) => {
   const results = projectsInformation.filter((project) => {
     return project.category === isCategory;
   });
-
   return (
     <section className='projects__section'>
       <div className='title'>
@@ -30,12 +27,7 @@ const Projects = ({ projectsInformation, test }) => {
           isSelected={isSelected}
         />
       </div>
-      <motion.div
-        className='projects__container'
-        initial={{ x: -50, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ ease: 'easeOut', duration: 1.2 }}
-      >
+      <div className='projects__container'>
         {results.length
           ? results.map((project) => {
               return (
@@ -43,7 +35,7 @@ const Projects = ({ projectsInformation, test }) => {
                   <h2>{project.name}</h2>
                   <p>{project.information}</p>
                   <div>
-                    <img src={Programming} alt='imagecodie' />
+                    <img src={project.src} alt='imagecodie' />
                   </div>
                 </div>
               );
@@ -54,12 +46,12 @@ const Projects = ({ projectsInformation, test }) => {
                   <h2>{project.name}</h2>
                   <p>{project.information}</p>
                   <div>
-                    <img src={Programming} alt='imagecodie' />
+                    <img src={project.src} alt='imagecodie' />
                   </div>
                 </div>
               );
             })}
-      </motion.div>
+      </div>
     </section>
   );
 };
