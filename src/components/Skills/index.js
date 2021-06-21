@@ -3,8 +3,8 @@ import { Logos } from '../../data/index';
 
 const index = () => {
   return (
-    <section className='skills__container'>
-      <div className='title'>
+    <div className='skills__container'>
+      <div id='skills' className='title'>
         <h1>Skills</h1>
       </div>
       <div className='skills_inner-container'>
@@ -41,7 +41,7 @@ const index = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

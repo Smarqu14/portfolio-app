@@ -37,10 +37,11 @@ button {
 
   .title {
     h1 {
-    color: $whiteColor;
+      color: $whiteColor;
       margin: 0px auto;
-     max-width: 700px;
-     position: relative;
+      max-width: 700px;
+      position: relative;
+      padding-top: 100px;
      }
 
    h1:before {

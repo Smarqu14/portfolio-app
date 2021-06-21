@@ -9,7 +9,7 @@ const Navbar = () => {
 
   const handleScroll = () => {
     const offset = window.scrollY;
-    if (offset >= 100) {
+    if (offset >= 1) {
       setScrolled(true);
     } else {
       setScrolled(false);
@@ -34,7 +34,7 @@ const Navbar = () => {
         {MenuItems.map((items, index) => {
           return (
             <li key={index}>
-              <span href={items.url}>{items.title}</span>
+              <a href={items.url}>{items.title}</a>
             </li>
           );
         })}

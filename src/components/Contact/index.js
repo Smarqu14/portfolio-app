@@ -6,8 +6,11 @@ const Contact = () => {
   const onSubmit = (data) => console.log(data);
 
   return (
-    <section className='section__contact'>
+    <div className='section__contact'>
       <div className='form__container'>
+        <div id='contact' className='title'>
+          <h1>Get In Touch </h1>
+        </div>
         {/* <form className='form__contact' onSubmit={handleSubmit(onSubmit)}>
           <h3>Contact me </h3>
           <h4>Lets work together</h4>
@@ -75,9 +78,8 @@ const Contact = () => {
             <input type='submit' />
           </div>
         </form> */}
-        FORM
       </div>
-    </section>
+    </div>
   );
 };
 

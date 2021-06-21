@@ -16,8 +16,8 @@ const Projects = ({ projectsInformation, category }) => {
     return project.category === isCategory;
   });
   return (
-    <section className='projects__section'>
-      <div className='title'>
+    <div className='projects__section'>
+      <div id='projects' className='title'>
         <h1>Projects</h1>
       </div>
       <div className='category__container'>
@@ -52,7 +52,7 @@ const Projects = ({ projectsInformation, category }) => {
               );
             })}
       </div>
-    </section>
+    </div>
   );
 };
 

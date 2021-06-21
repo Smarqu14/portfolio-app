@@ -28,14 +28,13 @@
   background: rgb(58,56,93);
   background: linear-gradient(90deg, rgba(58,56,93,1) 26%, rgba(54,58,173,1) 45%, rgba(63,131,134,1) 100%);
   transition: $transition;
-
 }
 
 .nav-items{
   display:flex;
   li {
     list-style: none;
-    span {
+    a {
       text-decoration: none;
       color: $whiteColor;
       padding: 7px 10px;
@@ -47,7 +46,6 @@
         color: $whiteColor;
         border: $whiteBorder;
         transition: $transition;
-        
       }
     }
   }
@@ -91,7 +89,9 @@
 // ABOUT PAGE
 .about__section {
   text-align: center;
-  color: $whiteColor;    
+  color: $whiteColor;   
+  
+  
 }
 .about__traits {
   padding: 90px;
@@ -327,7 +327,7 @@
     div{ 
       padding: 10px;    
 
-      span {
+      a {
         color: red;
       }
      
@@ -395,7 +395,7 @@ footer {
   //Navbar
   .nav-items{
     li {
-      span {
+      a {
         font-size: 30px;
       }
     }
@@ -450,7 +450,7 @@ footer {
   }
   .nav-items{
     li {
-      span {  
+      a {  
         font-size: 22px;
       }
     }
@@ -525,7 +525,7 @@ footer {
   // Navbar
   .nav-items{
     li {
-      span {  
+      a {  
         font-size: 18px;
         margin-right: 0px;
       }
@@ -585,7 +585,7 @@ footer {
   //Navbar
   .nav-items{
     li {
-      span {  
+      a {  
         font-size: 0.9rem;
       }
     }

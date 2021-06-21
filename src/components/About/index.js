@@ -5,13 +5,13 @@ import { traits } from '../../data/index';
 
 const About = () => {
   return (
-    <section className='about__section'>
-      <div className='title'>
+    <div className='about__section'>
+      <div id='about' className='title'>
         <h1>About</h1>
       </div>
       <TraitList traits={traits} />
       <PersonalInfo />
-    </section>
+    </div>
   );
 };
 

@@ -5,7 +5,7 @@ import futuristic from '../../images/futuristic.gif';
 
 const Banner = () => {
   return (
-    <div className='banner__container'>
+    <div id='home' className='banner__container'>
       <div className='banner__content'>
         <div className='banner__left'>
           <h1>
