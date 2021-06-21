@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <section className='section__contact'>
       <div className='form__container'>
-        <form className='form__contact' onSubmit={handleSubmit(onSubmit)}>
+        {/* <form className='form__contact' onSubmit={handleSubmit(onSubmit)}>
           <h3>Contact me </h3>
           <h4>Lets work together</h4>
           <div>
@@ -74,7 +74,8 @@ const Contact = () => {
           <div className='btn'>
             <input type='submit' />
           </div>
-        </form>
+        </form> */}
+        FORM
       </div>
     </section>
   );

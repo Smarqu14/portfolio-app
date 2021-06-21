@@ -35,7 +35,7 @@
   display:flex;
   li {
     list-style: none;
-    a {
+    span {
       text-decoration: none;
       color: $whiteColor;
       padding: 7px 10px;
@@ -395,7 +395,7 @@ footer {
   //Navbar
   .nav-items{
     li {
-      a {
+      span {
         font-size: 30px;
       }
     }
@@ -450,7 +450,7 @@ footer {
   }
   .nav-items{
     li {
-      a {  
+      span {  
         font-size: 22px;
       }
     }
@@ -525,7 +525,7 @@ footer {
   // Navbar
   .nav-items{
     li {
-      a {  
+      span {  
         font-size: 18px;
         margin-right: 0px;
       }
@@ -585,7 +585,7 @@ footer {
   //Navbar
   .nav-items{
     li {
-      a {  
+      span {  
         font-size: 0.9rem;
       }
     }

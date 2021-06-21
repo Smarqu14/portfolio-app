@@ -3,7 +3,7 @@ import lego from '../../images/lego.png';
 
 import CategoryList from './CategoryList.js';
 
-const Projects = ({ projectsInformation, test }) => {
+const Projects = ({ projectsInformation, category }) => {
   const [isToggled, setToggle] = useState(false);
   const [isCategory, setCategory] = useState('');
 
@@ -22,7 +22,7 @@ const Projects = ({ projectsInformation, test }) => {
       </div>
       <div className='category__container'>
         <CategoryList
-          test={test}
+          category={category}
           projectsInformation={projectsInformation}
           isSelected={isSelected}
         />

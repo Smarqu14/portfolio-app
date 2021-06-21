@@ -142,4 +142,4 @@ export const Logos = [
     color: '#4b8bbe',
   },
 ];
-export const test = ['All', 'React', 'Fullstack', 'Flask'];
+export const category = ['All', 'React', 'Fullstack', 'Flask'];

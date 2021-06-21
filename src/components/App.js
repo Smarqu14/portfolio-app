@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
 
 import Banner from './Banner';
 import Navbar from './Navbar';
@@ -8,7 +9,7 @@ import Contact from './Contact';
 import Footer from './Footer';
 import Skills from './Skills';
 
-import { projectsInformation, test } from '../data';
+import { projectsInformation, category } from '../data';
 
 const App = () => {
   return (
@@ -17,7 +18,7 @@ const App = () => {
       <Banner />
       <About />
       <Skills />
-      <Projects projectsInformation={projectsInformation} test={test} />
+      <Projects projectsInformation={projectsInformation} category={category} />
       {/* <Contact /> */}
       <Footer />
     </>

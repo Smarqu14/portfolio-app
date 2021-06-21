@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
-const CategoryList = ({ projectsInformation, test, isSelected }) => {
+const CategoryList = ({ projectsInformation, category, isSelected }) => {
   return (
     <ul className='category__list'>
-      {test.map((item) => {
+      {category.map((item) => {
         return (
           <li onClick={(e) => isSelected(e)} category={item}>
             {item}
