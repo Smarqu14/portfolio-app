@@ -18,7 +18,7 @@ const Projects = ({ projectsInformation, category }) => {
   return (
     <div className='projects__section'>
       <div id='projects' className='title'>
-        <h1>Projects</h1>
+        <h2>Projects</h2>
       </div>
       <div className='category__container'>
         <CategoryList

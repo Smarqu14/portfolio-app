@@ -1,11 +1,12 @@
 import React from 'react';
 import { Logos } from '../../data/index';
+import Bar from './Bar';
 
 const index = () => {
   return (
     <div className='skills__container'>
       <div id='skills' className='title'>
-        <h1>Skills</h1>
+        <h2>Skills</h2>
       </div>
       <div className='skills_inner-container'>
         <div className='technologies__icons'>
@@ -18,28 +19,7 @@ const index = () => {
             );
           })}
         </div>
-
-        <div className='skills__bar'>
-          <p>Front-end</p>
-          <div className='container'>
-            <div className='skills frontend'>90%</div>
-          </div>
-
-          <p>FullStackJS</p>
-          <div className='container'>
-            <div className='skills fullstack'>80%</div>
-          </div>
-
-          <p>ReactJS</p>
-          <div className='container'>
-            <div className='skills react'>90%</div>
-          </div>
-
-          <p>Flask</p>
-          <div className='container'>
-            <div className='skills flask'>60%</div>
-          </div>
-        </div>
+        <Bar />
       </div>
     </div>
   );

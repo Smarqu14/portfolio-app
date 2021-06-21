@@ -36,7 +36,7 @@ button {
   }
 
   .title {
-    h1 {
+    h2 {
       color: $whiteColor;
       margin: 0px auto;
       max-width: 700px;
@@ -44,7 +44,7 @@ button {
       padding-top: 100px;
      }
 
-   h1:before {
+   h2:before {
      content: "";
      display: block;
      width: 150px;
@@ -52,10 +52,10 @@ button {
      background: rgb(96,92,159);
      background: linear-gradient(90deg, rgba(96,92,159,1) 21%, rgba(165,181,182,1) 46%, rgba(0,212,255,1) 100%);
      left: 85px;
-     top: 50%;
+     top: 85%;
      position: absolute;
    }
-   h1:after {
+   h2:after {
      content: "";
      display: block;
      width: 150px;
@@ -63,7 +63,7 @@ button {
      background: rgb(96,92,159);
      background: linear-gradient(90deg, rgba(96,92,159,1) 21%, rgba(165,181,182,1) 46%, rgba(0,212,255,1) 100%);
      right: 85px;
-     top: 50%;
+     top: 85%;
      position: absolute;
    }
  }

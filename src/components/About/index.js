@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div className='about__section'>
       <div id='about' className='title'>
-        <h1>About</h1>
+        <h2>About</h2>
       </div>
       <TraitList traits={traits} />
       <PersonalInfo />
