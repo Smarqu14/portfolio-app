@@ -24,7 +24,7 @@ const Banner = () => {
               loop
             />{' '}
           </p>
-          <a href='#contact'>
+          <a href='#projects'>
             <button>View my work</button>
           </a>
         </div>

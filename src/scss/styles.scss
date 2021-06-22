@@ -183,6 +183,7 @@
       width: 500px;
       text-align: start;
       color: $whiteColor;
+      
 
       p {
         font-size: 20px;
@@ -336,7 +337,14 @@ footer {
       padding-top: 10px;
       padding-right: 50px;
       padding-left: 50px;
+      border: 1px solid transparent;
+      &:hover {
+      
+        border: $whiteBorder;
+        transition: $transition;
+      }
     }
+
   }
   
 }

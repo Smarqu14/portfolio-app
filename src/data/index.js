@@ -128,7 +128,7 @@ export const Logos = [
   {
     technology: 'HTML5',
     icon: <IoLogoHtml5 />,
-    color: '#000',
+    color: '#f06529 ',
   },
   {
     technology: 'CSS3',
@@ -143,7 +143,7 @@ export const Logos = [
   {
     technology: 'Git',
     icon: <AiOutlineGithub />,
-    color: '#333',
+    color: '#f34f29',
   },
   {
     technology: 'Python',
