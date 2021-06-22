@@ -5,18 +5,22 @@ const Bar = () => {
     {
       technology: 'Front-end',
       percentage: '90%',
-    },
-    {
-      technology: 'FullStackJs',
-      percentage: '80%',
+      class: 'frontend',
     },
     {
       technology: 'React',
       percentage: '90%',
+      class: 'react',
+    },
+    {
+      technology: 'FullStackJs',
+      percentage: '80%',
+      class: 'fullstack',
     },
     {
       technology: 'Flask',
       percentage: '60%',
+      class: 'flask',
     },
   ];
 
@@ -27,7 +31,7 @@ const Bar = () => {
           <>
             <p>{info.technology}</p>
             <div className='container'>
-              <div className='skills frontend'>{info.percentage}</div>
+              <div className={`skills ${info.class}`}>{info.percentage}</div>
             </div>
           </>
         );
