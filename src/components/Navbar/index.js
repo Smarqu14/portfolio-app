@@ -1,6 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
-import logo from '../../images/Steve codes (1).png';
+import logo from '../../images/logo.png';
 import { MenuItems } from './MenuItems';
 
 const Navbar = () => {
